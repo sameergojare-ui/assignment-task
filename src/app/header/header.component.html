@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-red navbar-dark">
+    <div class="wrapper">
+    </div>
+    <div class="container-fluid">
+        <a>
+            <span class="navbar-brand">Change Language</span>
+            <i class="fa fa-bars cursor-pointer expand-collaps-icon icon-size"
+                (click)="sharedService.expandSidebar = !sharedService.expandSidebar" data-toggle="tooltip"
+                data-placement="bottom" title="Expand/Collaps Side Bar"></i>
+        </a>
+        <div class="collapse navbar-collapse display-space-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0"></ul>
+            <div class="d-flex flex-column sim">
+                <button type="button" class="btn btn-light all-show" (click)="switchLang()">
+                    {{ sharedService.currentSelectedLang === 'en' ? 'Switch To Aribic' : 'Switch To English' }}
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,8 @@
+.display-flex {
+    display: flex;
+}
+
+.text-right {
+    text-align: right !important;
+    justify-content: end !important;
+}
